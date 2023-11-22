@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "antd": "^5.11.2"
+  }
+}
