@@ -1,0 +1,360 @@
+{
+    "topic": "orderBookL2_25.BTCUSDT",
+    "type": "snapshot",
+    "data": {
+        "order_book": [
+            {
+                "price": "37268.40",
+                "symbol": "BTCUSDT",
+                "id": "372684000",
+                "side": "Buy",
+                "size": 2.022
+            },
+            {
+                "price": "37268.70",
+                "symbol": "BTCUSDT",
+                "id": "372687000",
+                "side": "Buy",
+                "size": 0.134
+            },
+            {
+                "price": "37268.80",
+                "symbol": "BTCUSDT",
+                "id": "372688000",
+                "side": "Buy",
+                "size": 2.441
+            },
+            {
+                "price": "37268.90",
+                "symbol": "BTCUSDT",
+                "id": "372689000",
+                "side": "Buy",
+                "size": 2.011
+            },
+            {
+                "price": "37269.00",
+                "symbol": "BTCUSDT",
+                "id": "372690000",
+                "side": "Buy",
+                "size": 0.02
+            },
+            {
+                "price": "37269.10",
+                "symbol": "BTCUSDT",
+                "id": "372691000",
+                "side": "Buy",
+                "size": 0.005
+            },
+            {
+                "price": "37269.50",
+                "symbol": "BTCUSDT",
+                "id": "372695000",
+                "side": "Buy",
+                "size": 0.134
+            },
+            {
+                "price": "37269.60",
+                "symbol": "BTCUSDT",
+                "id": "372696000",
+                "side": "Buy",
+                "size": 0.134
+            },
+            {
+                "price": "37269.70",
+                "symbol": "BTCUSDT",
+                "id": "372697000",
+                "side": "Buy",
+                "size": 0.134
+            },
+            {
+                "price": "37269.80",
+                "symbol": "BTCUSDT",
+                "id": "372698000",
+                "side": "Buy",
+                "size": 0.179
+            },
+            {
+                "price": "37269.90",
+                "symbol": "BTCUSDT",
+                "id": "372699000",
+                "side": "Buy",
+                "size": 0.274
+            },
+            {
+                "price": "37270.00",
+                "symbol": "BTCUSDT",
+                "id": "372700000",
+                "side": "Buy",
+                "size": 0.213
+            },
+            {
+                "price": "37270.10",
+                "symbol": "BTCUSDT",
+                "id": "372701000",
+                "side": "Buy",
+                "size": 0.256
+            },
+            {
+                "price": "37270.20",
+                "symbol": "BTCUSDT",
+                "id": "372702000",
+                "side": "Buy",
+                "size": 0.858
+            },
+            {
+                "price": "37270.30",
+                "symbol": "BTCUSDT",
+                "id": "372703000",
+                "side": "Buy",
+                "size": 0.234
+            },
+            {
+                "price": "37270.50",
+                "symbol": "BTCUSDT",
+                "id": "372705000",
+                "side": "Buy",
+                "size": 0.053
+            },
+            {
+                "price": "37270.60",
+                "symbol": "BTCUSDT",
+                "id": "372706000",
+                "side": "Buy",
+                "size": 0.134
+            },
+            {
+                "price": "37270.70",
+                "symbol": "BTCUSDT",
+                "id": "372707000",
+                "side": "Buy",
+                "size": 0.191
+            },
+            {
+                "price": "37270.80",
+                "symbol": "BTCUSDT",
+                "id": "372708000",
+                "side": "Buy",
+                "size": 0.565
+            },
+            {
+                "price": "37270.90",
+                "symbol": "BTCUSDT",
+                "id": "372709000",
+                "side": "Buy",
+                "size": 0.214
+            },
+            {
+                "price": "37271.10",
+                "symbol": "BTCUSDT",
+                "id": "372711000",
+                "side": "Buy",
+                "size": 0.134
+            },
+            {
+                "price": "37271.50",
+                "symbol": "BTCUSDT",
+                "id": "372715000",
+                "side": "Buy",
+                "size": 0.267
+            },
+            {
+                "price": "37272.00",
+                "symbol": "BTCUSDT",
+                "id": "372720000",
+                "side": "Buy",
+                "size": 0.133
+            },
+            {
+                "price": "37272.10",
+                "symbol": "BTCUSDT",
+                "id": "372721000",
+                "side": "Buy",
+                "size": 0.01
+            },
+            {
+                "price": "37272.20",
+                "symbol": "BTCUSDT",
+                "id": "372722000",
+                "side": "Buy",
+                "size": 0.512
+            },
+            {
+                "price": "37272.30",
+                "symbol": "BTCUSDT",
+                "id": "372723000",
+                "side": "Sell",
+                "size": 4.637
+            },
+            {
+                "price": "37272.40",
+                "symbol": "BTCUSDT",
+                "id": "372724000",
+                "side": "Sell",
+                "size": 0.077
+            },
+            {
+                "price": "37274.00",
+                "symbol": "BTCUSDT",
+                "id": "372740000",
+                "side": "Sell",
+                "size": 0.138
+            },
+            {
+                "price": "37274.10",
+                "symbol": "BTCUSDT",
+                "id": "372741000",
+                "side": "Sell",
+                "size": 0.001
+            },
+            {
+                "price": "37274.50",
+                "symbol": "BTCUSDT",
+                "id": "372745000",
+                "side": "Sell",
+                "size": 1.6
+            },
+            {
+                "price": "37274.60",
+                "symbol": "BTCUSDT",
+                "id": "372746000",
+                "side": "Sell",
+                "size": 2.097
+            },
+            {
+                "price": "37274.70",
+                "symbol": "BTCUSDT",
+                "id": "372747000",
+                "side": "Sell",
+                "size": 0.001
+            },
+            {
+                "price": "37274.80",
+                "symbol": "BTCUSDT",
+                "id": "372748000",
+                "side": "Sell",
+                "size": 1.3
+            },
+            {
+                "price": "37274.90",
+                "symbol": "BTCUSDT",
+                "id": "372749000",
+                "side": "Sell",
+                "size": 0.024
+            },
+            {
+                "price": "37275.00",
+                "symbol": "BTCUSDT",
+                "id": "372750000",
+                "side": "Sell",
+                "size": 0.673
+            },
+            {
+                "price": "37275.10",
+                "symbol": "BTCUSDT",
+                "id": "372751000",
+                "side": "Sell",
+                "size": 3.48
+            },
+            {
+                "price": "37275.20",
+                "symbol": "BTCUSDT",
+                "id": "372752000",
+                "side": "Sell",
+                "size": 0.859
+            },
+            {
+                "price": "37275.40",
+                "symbol": "BTCUSDT",
+                "id": "372754000",
+                "side": "Sell",
+                "size": 0.067
+            },
+            {
+                "price": "37275.90",
+                "symbol": "BTCUSDT",
+                "id": "372759000",
+                "side": "Sell",
+                "size": 0.004
+            },
+            {
+                "price": "37276.00",
+                "symbol": "BTCUSDT",
+                "id": "372760000",
+                "side": "Sell",
+                "size": 0.134
+            },
+            {
+                "price": "37276.10",
+                "symbol": "BTCUSDT",
+                "id": "372761000",
+                "side": "Sell",
+                "size": 0.661
+            },
+            {
+                "price": "37276.20",
+                "symbol": "BTCUSDT",
+                "id": "372762000",
+                "side": "Sell",
+                "size": 0.671
+            },
+            {
+                "price": "37276.40",
+                "symbol": "BTCUSDT",
+                "id": "372764000",
+                "side": "Sell",
+                "size": 0.002
+            },
+            {
+                "price": "37276.50",
+                "symbol": "BTCUSDT",
+                "id": "372765000",
+                "side": "Sell",
+                "size": 2.606
+            },
+            {
+                "price": "37276.60",
+                "symbol": "BTCUSDT",
+                "id": "372766000",
+                "side": "Sell",
+                "size": 0.2
+            },
+            {
+                "price": "37276.90",
+                "symbol": "BTCUSDT",
+                "id": "372769000",
+                "side": "Sell",
+                "size": 1.508
+            },
+            {
+                "price": "37277.20",
+                "symbol": "BTCUSDT",
+                "id": "372772000",
+                "side": "Sell",
+                "size": 0.132
+            },
+            {
+                "price": "37277.40",
+                "symbol": "BTCUSDT",
+                "id": "372774000",
+                "side": "Sell",
+                "size": 0.134
+            },
+            {
+                "price": "37277.50",
+                "symbol": "BTCUSDT",
+                "id": "372775000",
+                "side": "Sell",
+                "size": 0.377
+            },
+            {
+                "price": "37277.70",
+                "symbol": "BTCUSDT",
+                "id": "372777000",
+                "side": "Sell",
+                "size": 1.592
+            }
+        ]
+    },
+    "cross_seq": "102778782472",
+    "timestamp_e6": "1700748595030284"
+}
