@@ -1,6 +1,4 @@
-from typing import Any
 import tornado
-from tornado import httputil
 import tornado.websocket
 import tornado.ioloop
 import tornado.web
@@ -11,15 +9,20 @@ import json
 import traceback
 from datetime import datetime
 
+
 class WebSocketHandler(tornado.websocket.WebSocketHandler):
 
     def open(self):
         print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         print("WebSocket opened")
+        self.start_time = time.time()  # 记录请求开始时间
+        print(f"Visitor IP: {self.request.remote_ip}")
 
     def on_close(self):
         print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         print("WebSocket closed")
+        elapsed_time = time.time() - self.start_time
+        print(f"Visitor IP: {self.request.remote_ip}, Elapsed Time: {elapsed_time:.2f} seconds")
 
     def check_origin(self, origin):
         # 检查来源是否合法，如果合法返回True，否则返回False
@@ -30,16 +33,16 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
             try:
                 message = await websocket.recv()
                 if type == "Binance":
-                        depth_data = json.loads(message)
-                        depth_data['b'] = depth_data['b'][:1] if depth_data['b'] else []
-                        depth_data['a'] = depth_data['a'][:1] if depth_data['a'] else []
+                    depth_data = json.loads(message)
+                    depth_data['b'] = depth_data['b'][:1] if depth_data['b'] else []
+                    depth_data['a'] = depth_data['a'][:1] if depth_data['a'] else []
                 elif type == "Bybit":
-                        ret_data = json.loads(message)
-                        depth_data = ret_data["data"]
-                        depth_data['b'] = depth_data['b'][:1] if depth_data['b'] else []
-                        depth_data['a'] = depth_data['a'][:1] if depth_data['a'] else []
-                        depth_data['type'] = ret_data["type"]
-                        depth_data['ts'] = ret_data["ts"]
+                    ret_data = json.loads(message)
+                    depth_data = ret_data["data"]
+                    depth_data['b'] = depth_data['b'][:1] if depth_data['b'] else []
+                    depth_data['a'] = depth_data['a'][:1] if depth_data['a'] else []
+                    depth_data['type'] = ret_data["type"]
+                    depth_data['ts'] = ret_data["ts"]
             except:
                 print("获取的数据不对！==")
                 print(f"--data: {ret_data}")
@@ -67,7 +70,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         symbol = "BTCUSDT"
         lower_symbol = symbol.lower()
         simple_symbol = lower_symbol[3:]
-        levels1 = 5 # levels表示几档买卖单信息, 可选：5/10/20档
+        levels1 = 5  # levels表示几档买卖单信息, 可选：5/10/20档
         update_speed = "100ms"  # 可选：250ms 或 500ms 或 100ms
         levels2 = 200
 
@@ -84,15 +87,15 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         }
 
         # 处理前端发送的消息
-        print(f"="*50)
-        print(f"发送异步请求")
+        print("="*50)
+        print("发送异步请求")
 
         # 向另一个服务器发送WebSocket请求
         async with websockets.connect(uri1, ping_interval=None) as websocket1:
             async with websockets.connect(uri2, ping_interval=None) as websocket2:
                 print(f"===request_data2: {request_data2}")
                 await websocket2.send(json.dumps(request_data2))
-                response = await websocket2.recv()
+                _ = await websocket2.recv()
 
                 while True:
                     try:
@@ -124,10 +127,12 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
                         print("WebSocket connection closed while in a loop:", e)
                         break
 
+
 def make_app():
     return tornado.web.Application([
         (r'/websocket', WebSocketHandler),
     ])
+
 
 if __name__ == '__main__':
     app = make_app()
