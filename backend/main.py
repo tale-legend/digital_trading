@@ -117,7 +117,8 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
 
                         total_data = [message1, message2]
                         total_data_str = json.dumps(total_data)
-                        print(f"response1: {total_data_str}")
+                        formatted_time = datetime.fromtimestamp(message1["E"]//1000).strftime('%Y-%m-%d %H:%M:%S')
+                        print(f"response1({formatted_time}): {total_data_str}")
 
                         # 将从另一个服务器收到的数据发送回前端
                         self.write_message(total_data_str)
